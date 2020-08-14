@@ -1,0 +1,18 @@
+sudo: false
+language: java
+install: true
+cache:
+  directories:
+    - $HOME/.m2
+before_install:
+  - ./scripts/status-checks.sh verify
+script:
+  - ./scripts/status-checks.sh install
+  - ./scripts/status-checks.sh test
+after_success:
+#  - ./scripts/status-checks.sh site
+  - ./scripts/deploy.sh
+env:
+  global:
+    secure: "DOoTZ94ZdzLFXJ5wZ6kEjPoeTFGgfjttsQ3acZXtDTKJq1+MXOj1tzGmzXzNW7lp+S4iklG4DZ8CP47RDwNsSOxCerPVdI2lJKqSB3q2FlmFrNMjYzvkoylQ1Vkb8C/1+x5wjiiXaV7cDbPgt2fFI16c4OK3jjVgtiCwi8nrEA0="
+
