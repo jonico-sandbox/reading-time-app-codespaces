@@ -1,7 +1,3 @@
-# Have GitHub Actions run your Jenkins single-shot master in a Docker container
-
-More information on how GitHub Actions have been set up can be found [here](https://github.com/jonico/jenkinsfile-runner-github-actions).
-
 ## About
 The [reading-time-app](https://reading-time-app.herokuapp.com/) is a web application using Java and [Maven](https://maven.apache.org/). It lists the top choices of recommended books for Hyrule.
 
