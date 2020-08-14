@@ -76,4 +76,4 @@ https://office-tools-reviewninja.herokuapp.com/
 ## Contributing for beginners
 First of all, welcome to the team :sparkles: :tada: :heart:!
 
-We have an issue label called [`beginners`](https://github.com/jonico/reading-time-app/labels/beginners) for issues that should be perfect to get going, [check them out](https://github.com/jonico/reading-time-app/labels/beginners), assign yourself and :ship: your first code. 
+We have an issue label called [`beginners`](https://github.com/jonico-sandbox/reading-time-app-codespaces/labels/beginners) for issues that should be perfect to get going, [check them out](https://github.com/jonico/reading-time-app/labels/beginners), assign yourself and :ship: your first code. 
