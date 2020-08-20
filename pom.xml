@@ -13,6 +13,7 @@
 		<github.global.oauth2Token>${env.TOKEN}</github.global.oauth2Token>
 		<checkstyle.version>6.14.1</checkstyle.version>
 		<maven.checkstyle.plugin.version>2.17</maven.checkstyle.plugin.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -76,6 +77,16 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+                    		<groupId>org.apache.maven.plugins</groupId>
+                    		<artifactId>maven-compiler-plugin</artifactId>
+                    		<version>3.6.3</version>
+                    		<configuration>
+                        	<!-- To enable debug compilation use the maven.compiler.debug user property -->
+                        		<source>${java.version}</source>
+                        		<target>${java.version}</target>
+                    		</configuration>
+                	</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
